@@ -23,7 +23,7 @@ int main()
                case 1: printf("\nEnter your amount = $");
                        scanf("%f",&a);
                         printf("\n========================================================");     
-                       b = a * 100;
+                       b = a * 94.49 ;
                        printf("\nYOUR amount in ruppees = ₹%f",b);
                     printf("\n========================================================");
                        break;
@@ -37,7 +37,7 @@ int main()
                case 3: printf("\nEnter your amount = ₹");
                        scanf("%f",&a);
                     printf("\n========================================================");
-                       b = a / 100;
+                       b = a / 94.49;
                        printf("\nYOUR amount in Dollars = $%f",b);
                     printf("\n========================================================");
                        break;

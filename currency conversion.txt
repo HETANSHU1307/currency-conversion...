@@ -1,0 +1,72 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+    int i;
+    float a,b;
+    char  g;
+    do
+    {    
+    printf("========================================================");
+    printf("\nOPTION 1 = DOLLAR INTO RUPPES");
+    printf("\nOPTION 2 = YEN INTO RUPPES");
+    printf("\nOPTION 3 = RUPPES INTO DOLLAR");
+    printf("\nOPTION 4 = RUPPES INTO YEN");
+    printf("\n========================================================");
+    printf("\nENTER YOUR CHOICE : ");
+   
+    scanf("%d",&i);
+     printf("\n========================================================");
+    switch(i)
+           {
+               case 1: printf("\nEnter your amount = $");
+                       scanf("%f",&a);
+                        printf("\n========================================================");     
+                       b = a * 100;
+                       printf("\nYOUR amount in ruppees = ₹%f",b);
+                    printf("\n========================================================");
+                       break;
+               case 2: printf("\nEnter your amount = ¥");
+                       scanf("%f",&a);
+                    printf("\n========================================================");
+                       b = a * 0.61;
+                       printf("\nYOUR amount in ruppees = ₹%f",b);
+                    printf("\n========================================================");
+                       break;   
+               case 3: printf("\nEnter your amount = ₹");
+                       scanf("%f",&a);
+                    printf("\n========================================================");
+                       b = a / 100;
+                       printf("\nYOUR amount in Dollars = $%f",b);
+                    printf("\n========================================================");
+                       break;
+               case 4: printf("\nEnter your amount = ₹");
+                       scanf("%f",&a);
+                    printf("\n========================================================");
+                       b = a/0.61;
+                       printf("\nYOUR amount in ruppees = ¥%f",b);
+                    printf("\n========================================================");
+                       break;
+               default: printf("\nINVALID CHOICE!!!!!!!!");
+                            
+           }
+        printf("\n\nDo you want to perform another operation? (y/n): ");
+        scanf(" %c", &g);
+     }
+while(g == 'y' || g == 'Y');
+
+    printf("\nProgram ended. Thank you!");
+
+    return 0;
+}
+    
+
+
+
+
+
+
+
+
+    
